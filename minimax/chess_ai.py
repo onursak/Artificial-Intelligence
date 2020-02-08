@@ -194,13 +194,13 @@ def detect_backward_pawns(board, color):
 # Returned matrix facilitates the process for looking pawn is passed or not
 def create_matrix_for_pawns(pawn_positions):
 	pawn_matrix = [[0,0,0,0,0,0,0,0],
-				   [0,0,0,0,0,0,0,0],
-				   [0,0,0,0,0,0,0,0],
-				   [0,0,0,0,0,0,0,0],
-				   [0,0,0,0,0,0,0,0],
-				   [0,0,0,0,0,0,0,0],
-				   [0,0,0,0,0,0,0,0],
-				   [0,0,0,0,0,0,0,0]]
+		       [0,0,0,0,0,0,0,0],
+		       [0,0,0,0,0,0,0,0],
+		       [0,0,0,0,0,0,0,0],
+		       [0,0,0,0,0,0,0,0],
+		       [0,0,0,0,0,0,0,0],
+		       [0,0,0,0,0,0,0,0],
+		       [0,0,0,0,0,0,0,0]]
 	for i in pawn_positions:
 		index = chess.square_rank(i)
 		offset = chess.square_file(i)
