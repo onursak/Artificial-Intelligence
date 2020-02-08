@@ -317,8 +317,8 @@ def eval_func(board, color):
 	
 	# These followings are the features that give penalty
 	pawn_position_score = (( detect_backward_pawns(board, color) - detect_backward_pawns(board, not color) ) 
-							+ ( detect_doubled_pawns(board, color) - detect_doubled_pawns(board, not color))
-							+ ( detect_isolated_pawns(board, color) - detect_isolated_pawns(board, not color)) )
+				+ ( detect_doubled_pawns(board, color) - detect_doubled_pawns(board, not color))
+				+ ( detect_isolated_pawns(board, color) - detect_isolated_pawns(board, not color)) )
 
 	passed_pawn_score = detect_passed_pawns(board, color) - detect_passed_pawns(board, not color)
 	
